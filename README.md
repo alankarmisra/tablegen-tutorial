@@ -236,7 +236,7 @@ defm MUL : InstructionM;
 // MUL_intel
 ```
 
-See the output:
+which outputs:
 
 ```c
 ------------- Classes -----------------
@@ -773,7 +773,7 @@ foreach i = [1, 2] in {
 }
 ```
 
-And we get the output:
+which outputs:
 
 ```c
 ------------- Classes -----------------
@@ -820,8 +820,10 @@ What??? Not a dealbreaker but be vary of this behaviour.
 If you're coming from a C++ background, these preprocessing directives should look familar. We've been using them all along so there's no surprises below.
 
 ```c
-#ifndef SAMPLE_TD
-#define SAMPLE_TD
+/// preprocessor.td
+
+#ifndef PREPROCESSOR_TD
+#define PREPROCESSOR_TD
  
 // This will only work if your include paths are set correctly. 
 include "mlir/IR/BuiltinAttributes.td"
@@ -831,7 +833,7 @@ class C {}
 // the #else clause is also available in the preprocessor.
 // but we don't use it here.
  
-#endif // SAMPLE_TD
+#endif // PREPROCESSOR_TD
 ```
 
 # Conclusion
