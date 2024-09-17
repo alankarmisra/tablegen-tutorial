@@ -2,11 +2,13 @@
 
 In the following notes, we explore TableGen features in the context of the MLIR pipeline. We do this at a leisurely pace. There’s plenty of code examples, so maybe fire up the laptop to read this if you haven’t already.
 
-For a more general discussion on TableGen which you can check out the official docs. They are a bit too verbose for my liking but should be considered as the de-facto source for documentation (clearly). 
+For a more general discussion on TableGen which you can check out the [official docs](https://llvm.org/docs/TableGen/index.html). 
 
 ## Prequisites
 
-Make sure you have llvm built locally or installed using homebrew or one of the several other options. Because TableGen is used only in the context of MLIR/LLVM, the llvm-tblgen binary is not copied into the usr/bin directory. Ensure that it’s in your path. 
+You can either build llvm/mlir locally or use a pre-built binary as outlined in [the documentation](https://llvm.org/docs/GettingStarted.html). I'm using a homebrew installation for the examples below. 
+
+**Note:** Because TableGen is used only in the context of MLIR/LLVM, the llvm-tblgen binary is not copied into the usr/bin directory. Make sure the binary is in your path.
 
 # Introduction
 ## What is TableGen?
