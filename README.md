@@ -8,13 +8,13 @@ For a more general discussion on TableGen which you can check out the [official 
 
 You can either build llvm/mlir locally or use a pre-built binary as outlined in [the documentation](https://llvm.org/docs/GettingStarted.html). I'm using a homebrew installation for the examples below. 
 
-**Note:** Because TableGen is used only in the context of MLIR/LLVM, the llvm-tblgen binary is not copied into the usr/bin directory. Make sure the binary is in your path.
+> **Note:** Because TableGen is used only in the context of MLIR/LLVM, the llvm-tblgen binary is not copied into the usr/bin directory. Make sure the binary is in your path.
 
 # Introduction
 ## What is TableGen?
 TableGen is a data definition language and allows one to specify what it calls records. A backend can parse the records and use as needed. Here’s a quick example so we aren’t running blind.
 
-**Note:** Syntax highlighting for TableGen is unsupported at the time of writing this tutorial. As a consequence, I've used the C syntax highlighter which does an OK job of highlighting bits and pieces though it is far from perfect.
+> **Note:** Syntax highlighting for TableGen is unsupported at the time of writing this tutorial. As a consequence, I've used the C syntax highlighter which does an OK job of highlighting bits and pieces though it is far from perfect.
 
 ```c
 class Compiler {
@@ -28,7 +28,7 @@ It’s ok not to understand everything. And it’s ok to think this looks suspic
 ## How does MLIR use it?
 In the context of MLIR, TableGen files you write will describe different components of the compiler allowing an MLIR backend to generate C++ classes and helper functions for your compiler. This approach is quicker, cleaner, and more efficient than writing the C++ classes yourself. It also encourages adherence to certain guidelines, as we’ll explore in later chapters, leading to a more consistent development process.
 
-**Note:** You can even write your own custom backend, though this won’t be covered or necessary in our case.
+> **Note:** You can even write your own custom backend, though this won’t be covered or necessary in our case.
 
 ## Why do I need to learn a new language?
 Why not just use JSON, YAML, or any one of the several available options? While we could, TableGen provides additional features like templates, class hierarchies, macros, and preprocessing, allowing us to minimize repetition and reduce the complexity of specifying information. However, the question of the usefulness of TableGen has been discussed within the community as well. For now this is their tool of choice, so we run with it.
@@ -199,7 +199,7 @@ def TypeExample {
 }
 ```
 
-**Note:** TableGen only supports decimal types i.e. floating point numbers won’t even parse. While this might seem like a gross omission, I haven’t seen any instances within the compiler construction framework where I wished I had floating point support. Having said that, if you absolutely MUST use floating point numbers in your code generation, you could represent them as strings and allow the backend to parse said strings.
+> **Note:** TableGen only supports decimal types i.e. floating point numbers won’t even parse. While this might seem like a gross omission, I haven’t seen any instances within the compiler construction framework where I wished I had floating point support. Having said that, if you absolutely MUST use floating point numbers in your code generation, you could represent them as strings and allow the backend to parse said strings.
 
 # Multi-classes
 This is where we depart from the OOP-ness of TableGen classes. Whereas a class allows you to generate a def, a multi-class allows you to generate multiple defs. That’s pretty much it. Why do we need these? I’ve only ever seen them being useful for low-level code where you want to generate defs for different architectures. Let’s see some simplified examples:
@@ -319,7 +319,7 @@ def SUB_intel { // InstructionWithOpcode
 # What’s bang(!)-ing
 TableGen has a bunch of bang (!) operators. Instead of explaining each one of them individually, I’ll resort to showing you code examples of each of them along with explanations where necessary.
 
-**Note:** Skim through these. In the context of MLIR, we don’t use these as much but you might come across uses in the library source code in which case it’s helpful to have some reference point.
+> **Note:** Skim through these. In the context of MLIR, we don’t use these as much but you might come across uses in the library source code in which case it’s helpful to have some reference point.
 
 ## Setup
 Some basic setup code for our operator examples. We put this in a separate file setup.td and include it in our code samples as necessary.
@@ -650,7 +650,7 @@ Directed Acyclic Graphs (DAGs) are used in compiler construction a lot to repres
 
 ![Expression Tree](expression.png)
 
-**Note:** Again, skim over the following operators. I have rarely used them in the context of writing compiler components but I have seen them being used in some library implementations, so just get a cursory idea for now. MLIR implicitly creates ASTs for your compiler, so you won't find yourself doing any sort of DAG manipulation in TableGen as you might expect.
+> **Note:** Again, skim over the following operators. I have rarely used them in the context of writing compiler components but I have seen them being used in some library implementations, so just get a cursory idea for now. MLIR implicitly creates ASTs for your compiler, so you won't find yourself doing any sort of DAG manipulation in TableGen as you might expect.
 
 ```c
 /// dagops.td
