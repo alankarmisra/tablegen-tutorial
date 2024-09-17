@@ -814,7 +814,7 @@ def PasteExample {
 }
 ```
 
-What??? Not a dealbreaker but be vary of this behaviour.
+What??? Not a dealbreaker but be wary of this behaviour.
 
 # Preprocessing
 If you're coming from a C++ background, these preprocessing directives should look familar. We've been using them all along so there's no surprises below.
