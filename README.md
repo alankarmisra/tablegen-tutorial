@@ -14,6 +14,8 @@ You can either build llvm/mlir locally or use a pre-built binary as outlined in 
 ## What is TableGen?
 TableGen is a data definition language and allows one to specify what it calls records. A backend can parse the records and use as needed. Here’s a quick example so we aren’t running blind.
 
+**Note:** Syntax highlighting for TableGen is unsupported at the time of writing this tutorial. As a consequence, I've used the C syntax highlighter which does an OK job of highlighting bits and pieces though it is far from perfect.
+
 ```c
 class Compiler {
   string version = "1.0";
