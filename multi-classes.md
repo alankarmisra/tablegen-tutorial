@@ -36,7 +36,7 @@ defm MUL : InstructionM;
 
 which outputs:
 
-```c
+```clike
 ------------- Classes -----------------
 class Instruction {
 }
@@ -53,7 +53,7 @@ def MUL_intel { // Instruction
 
 Here’s a more involved example.
 
-```c
+```clike
 // Define a class for instructions with a 4-bit opcode 
 // and an assembly name.
 class InstructionWithOpcode {
@@ -89,7 +89,7 @@ defm SUB : InstructionWithOpcodeM<0b0010, 0b0011, "sub">;
 
 And here's the output:
 
-```c
+```clike
 ------------- Classes -----------------
 class InstructionWithOpcode {
   bits<4> opcode = { ?, ?, ?, ? };
