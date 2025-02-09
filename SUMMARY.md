@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Why It Matters](README.md)
+* [TableGen and MLIR](README.md)
 * [Prerequisites](prerequisites.md)
 * [Introduction](introduction.md)
 * [Terminology](terminology.md)
