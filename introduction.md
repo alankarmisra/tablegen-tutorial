@@ -21,7 +21,9 @@ It’s ok not to understand everything. And it’s ok to think this looks suspic
 
 In the context of MLIR, TableGen files you write will describe different components of the compiler allowing an MLIR backend to generate C++ classes and helper functions for your compiler. This approach is quicker, cleaner, and more efficient than writing the C++ classes yourself. It also encourages adherence to certain guidelines, as we’ll explore in later chapters, leading to a more consistent development process.
 
-> **Note:** You can even write your own custom backend, though this won’t be covered or necessary in our case.
+{% hint style="info" %}
+You can even write your own custom backend, though this won’t be covered or necessary in our case.
+{% endhint %}
 
 ### Why do I need to learn a new language?
 

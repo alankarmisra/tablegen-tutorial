@@ -29,7 +29,7 @@ We run this through the llvm-tblgen command-line utility (I’m using the homebr
 /opt/homebrew/opt/llvm/bin/llvm-tblgen sample.td
 ```
 
-we get the following output on the console:
+Output:
 
 ```c
 ------------- Classes -----------------
