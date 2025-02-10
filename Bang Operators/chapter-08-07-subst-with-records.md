@@ -2,7 +2,7 @@
 
 I haven't seen many use-cases for `!subst` with `def`s instead of strings, but let's look at an example because it confused me a little when I first read the description:
 
-```c
+```tablegen
 // Define three test records, R1, R2, and R3
 class C {
 }

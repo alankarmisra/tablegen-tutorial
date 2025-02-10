@@ -1,6 +1,6 @@
 # Binary operators
 
-```c
+```tablegen
 /// binaryops.td
  
 #ifndef BINARYOPS

@@ -2,7 +2,7 @@
 
 Not unlike C++, in TableGen, templates allow us to pass initialization values to classes. Let’s dive into an example:
 
-```clike
+```tablegen
 // Base class for all Traits (shared behaviour among classes/instances)
 class Trait {}
  
@@ -29,7 +29,7 @@ def MulOp : ArithmeticOperator<"mul">;
 
 When you run this file through TableGen, it generates the following records. Notice that classes and defs are listed in alphabetical order, not hierarchical. Also, TableGen flattens and merges all the fields from parent classes and templates into the final def. This way, each def stands alone without referencing its parent, except in the comments.
 
-```clike
+```tablegen
 ------------- Classes -----------------
 class ArithmeticOperator<string ArithmeticOperator:mnemonic = ?, 
  Trait ArithmeticOperator:trait = ArithmeticOperatorTrait> {    // Operator

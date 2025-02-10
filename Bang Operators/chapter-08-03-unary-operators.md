@@ -1,7 +1,7 @@
 # Unary operators
 
-<pre class="language-c"><code class="lang-c"><strong>/// unaryops.td
-</strong>#ifndef UNARYOPS
+```tablegen
+#ifndef UNARYOPS
 #define UNARYOPS
  
 // Notice we don't have the # sign in front of the include like we do in C++
@@ -69,4 +69,4 @@ def UnaryOps {
 }
  
 #endif // UNARYOPS
-</code></pre>
+```

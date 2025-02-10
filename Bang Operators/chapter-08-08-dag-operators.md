@@ -1,14 +1,23 @@
 # DAG operators
 
-Directed Acyclic Graphs (DAGs) are used in compiler construction a lot to represent operation and type hierarchies along with other metadata in the form of Abstract Syntax Trees (AST). ASTs are a kind of a DAG with some constraints. Don't worry about the specifics right now. We will get plenty of practice in later chapters. For now just remember that a DAG unit (called a node) in TableGen consists of an Operator and zero or more Arguments. Arguments can be DAG nodes too so we can create hierarchies of nodes. I've used my excellent Figma skills to create this illustration for you (you know you're learning from the best):
+Directed Acyclic Graphs (DAGs) are used in compiler construction a lot to represent operation and type hierarchies along with other metadata in the form of Abstract Syntax Trees (AST). ASTs are a kind of a DAG with some constraints. Don't worry about the specifics right now. We will get plenty of practice in later chapters. For now just remember that a DAG unit (called a node) in TableGen consists of an Operator and zero or more Arguments. Arguments can be DAG nodes too so we can create hierarchies of nodes. I've used my excellent `mermaid` skills to create this illustration for you (you know you're learning from the best):
 
-![Expression Tree](../expression.png)
+<center>
+```mermaid  
+graph TD;
+  add-->op1[mul]
+  add-->op2[mul]
+  op1-->10
+  op1-->20
+  op2-->30
+  op2-->40
+```
+</center>
 
-{% hint style="info" %}
-Again, skim over the following operators. I have rarely used them in the context of writing compiler components but I have seen them being used in some library implementations, so just get a cursory idea for now. MLIR implicitly creates ASTs for your compiler, so you won't find yourself doing any sort of DAG manipulation in TableGen as you might expect.
-{% endhint %}
+!!!note
+    Again, skim over the following operators. I have rarely used them in the context of writing compiler components but I have seen them being used in some library implementations, so just get a cursory idea for now. MLIR implicitly creates ASTs for your compiler, so you won't find yourself doing any sort of DAG manipulation in TableGen as you might expect.
 
-```c
+```tablegen
 /// dagops.td
 
 #ifndef DAGOPS

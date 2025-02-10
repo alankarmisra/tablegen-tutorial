@@ -2,7 +2,7 @@
 
 This is where we depart from the OOP-ness of TableGen classes. Whereas a class allows you to generate a def, a multi-class allows you to generate multiple defs. That’s pretty much it. Why do we need these? I’ve only ever seen them being useful for low-level code where you want to generate defs for different architectures. Let’s see some simplified examples:
 
-```c
+```tablegen
 // For now we use an empty instruction.
 class Instruction{}
  
@@ -36,7 +36,7 @@ defm MUL : InstructionM;
 
 which outputs:
 
-```clike
+```tablegen
 ------------- Classes -----------------
 class Instruction {
 }
@@ -53,7 +53,7 @@ def MUL_intel { // Instruction
 
 Here’s a more involved example.
 
-```clike
+```tablegen
 // Define a class for instructions with a 4-bit opcode 
 // and an assembly name.
 class InstructionWithOpcode {
@@ -89,7 +89,7 @@ defm SUB : InstructionWithOpcodeM<0b0010, 0b0011, "sub">;
 
 And here's the output:
 
-```clike
+```tablegen
 ------------- Classes -----------------
 class InstructionWithOpcode {
   bits<4> opcode = { ?, ?, ?, ? };

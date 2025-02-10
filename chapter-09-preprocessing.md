@@ -2,7 +2,7 @@
 
 If you're coming from a C++ background, these preprocessing directives should look familar. We've been using them all along so there's no surprises below.
 
-```c
+```tablegen
 /// preprocessor.td
 
 #ifndef PREPROCESSOR_TD

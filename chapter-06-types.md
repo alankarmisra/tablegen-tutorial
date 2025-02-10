@@ -2,7 +2,7 @@
 
 So far, we’ve been working mainly with string and custom classes in our examples. However, TableGen offers a few other types and operators. This is already an improvement over JSON because in our case TableGen type-checks everything for us. Let’s quickly go through the available types. There aren’t many, and they’re fairly straightforward.
 
-```c
+```tablegen
 // Used in TypeExample
 class BinaryOp {}
 def op : BinaryOp {}
@@ -62,6 +62,5 @@ def TypeExample {
 }
 ```
 
-{% hint style="info" %}
-TableGen only supports decimal types i.e. floating point numbers won’t even parse. While this might seem like a gross omission, I haven’t seen any instances within the compiler construction framework where I wished I had floating point support. Having said that, if you absolutely MUST use floating point numbers in your code generation, you could represent them as strings and allow the backend to parse said strings.
-{% endhint %}
+!!!note
+    TableGen only supports decimal types i.e. floating point numbers won’t even parse. While this might seem like a gross omission, I haven’t seen any instances within the compiler construction framework where I wished I had floating point support. Having said that, if you absolutely MUST use floating point numbers in your code generation, you could represent them as strings and allow the backend to parse said strings.

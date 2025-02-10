@@ -4,7 +4,7 @@ TableGen specs primarily contain two types of records: abstract records called c
 
 The abstract/concrete distinction is similar to the difference between classes and instances in object-oriented programming. A quick example will make this clearer:
 
-```c
+```tablegen
 /// sample.td
 // class (defined using the `class` keyword)
 class ArithmeticOperator {
@@ -31,7 +31,7 @@ We run this through the llvm-tblgen command-line utility (I’m using the homebr
 
 Output:
 
-```c
+```tablegen
 ------------- Classes -----------------
 class ArithmeticOperator {
   string mnemonic = ?;

@@ -2,7 +2,7 @@
 
 Some basic setup code for our operator examples. We put this in a separate file setup.td and include it in our code samples as necessary.
 
-```c
+```tablegen
 /// setup.td
  
 #ifndef SETUP

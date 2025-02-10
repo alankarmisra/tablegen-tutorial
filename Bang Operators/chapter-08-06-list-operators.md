@@ -1,6 +1,6 @@
 # List operators
 
-```c
+```tablegen
 /// listops.td
 
 #ifndef LISTOPS

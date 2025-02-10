@@ -4,11 +4,7 @@
 
 TableGen is a data definition language and allows one to specify what it calls records. A backend can parse the records and use as needed. Here’s a quick example so we aren’t running blind.
 
-{% hint style="info" %}
-Syntax highlighting for `TableGen` is unsupported at the time of writing this tutorial. As a consequence, I've used the C syntax highlighter which does an OK job of highlighting bits and pieces though it is far from perfect.
-{% endhint %}
-
-```actionscript
+```tablegen
 class Compiler {
   string version = "1.0";
   string target = "arm64-apple-macosx"; 
@@ -21,9 +17,8 @@ It’s ok not to understand everything. And it’s ok to think this looks suspic
 
 In the context of MLIR, TableGen files you write will describe different components of the compiler allowing an MLIR backend to generate C++ classes and helper functions for your compiler. This approach is quicker, cleaner, and more efficient than writing the C++ classes yourself. It also encourages adherence to certain guidelines, as we’ll explore in later chapters, leading to a more consistent development process.
 
-{% hint style="info" %}
-You can even write your own custom backend, though this won’t be covered or necessary in our case.
-{% endhint %}
+!!!note
+    You can even write your own custom backend, though this won’t be covered or necessary in our case.
 
 ### Why do I need to learn a new language?
 

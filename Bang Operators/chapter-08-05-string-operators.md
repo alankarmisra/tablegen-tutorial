@@ -1,6 +1,6 @@
 # String operators
 
-```c
+```tablegen
 /// stringops.td
 #ifndef STRINGOPS
 #define STRINGOPS

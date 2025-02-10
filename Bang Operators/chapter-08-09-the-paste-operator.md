@@ -2,7 +2,7 @@
 
 The paste operator is useful but has a few quirks. First let's start with the useful usecases (see what I did there?).
 
-```c
+```tablegen
 defvar errorStr = "error";
 
 class cls<string opName> {
@@ -29,7 +29,7 @@ foreach i = [1, 2] in {
 
 which outputs:
 
-```c
+```tablegen
 ------------- Classes -----------------
 class cls<string cls:opName = ?> {
   list<int> lst = [1, 2, 3, 4];
@@ -48,7 +48,7 @@ def rec2 {
 
 ### Paste: The weirdness
 
-```c
+```tablegen
 defvar suffix = "_string";
 
 def PasteExample {
@@ -60,7 +60,7 @@ In the example above, in the expression `suffix # suffix`, the first suffix is e
 
 So you get the output:
 
-```c
+```tablegen
 ------------- Classes -----------------
 ------------- Defs -----------------
 def PasteExample {
