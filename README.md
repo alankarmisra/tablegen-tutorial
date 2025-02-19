@@ -1,4 +1,4 @@
-# What is it good for?
+# TableGen | What is it good for?
 
 In the following notes, we explore `TableGen` features in the context of the MLIR pipeline. We do this at a leisurely pace. There’s plenty of code examples, so maybe fire up the laptop to read this if you haven’t already.
 
