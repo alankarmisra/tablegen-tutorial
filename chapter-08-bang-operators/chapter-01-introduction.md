@@ -1,4 +1,7 @@
-# Bang (!) operators
+---
+title: "Bang (!) operators"
+---
+# Introduction
 
 TableGen has a bunch of bang (!) operators. Instead of explaining each one of them individually, I’ll resort to showing you code examples of each of them along with explanations where necessary.
 

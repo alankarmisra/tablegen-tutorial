@@ -1,5 +1,22 @@
-# TableGen | What is it good for?
+# Index
 
-In the following notes, we explore `TableGen` features in the context of the MLIR pipeline. We do this at a leisurely pace. There’s plenty of code examples, so maybe fire up the laptop to read this if you haven’t already.
+* [Chapter 1: Tablegen What Is It Good For](tablegen-tutorial/chapter-01-tablegen-what-is-it-good-for.md)
+* [Chapter 2: Prerequisites](tablegen-tutorial/chapter-02-prerequisites.md)
+* [Chapter 3: Introduction](tablegen-tutorial/chapter-03-introduction.md)
+* [Chapter 4: Terminology](tablegen-tutorial/chapter-04-terminology.md)
+* [Chapter 5: Templates](tablegen-tutorial/chapter-05-templates.md)
+* [Chapter 6: Types](tablegen-tutorial/chapter-06-types.md)
+* [Chapter 7: Multi Classes](tablegen-tutorial/chapter-07-multi-classes.md)
 
-For a more general discussion on `TableGen` which you can check out the [official docs](https://llvm.org/docs/TableGen/index.html).
+* Chapter 8 Bang Operators
+  * [Chapter 1: Introduction](chapter-08-bang-operators/chapter-01-introduction.md)
+  * [Chapter 2: Setting Up](chapter-08-bang-operators/chapter-02-setting-up.md)
+  * [Chapter 3: Unary Operators](chapter-08-bang-operators/chapter-03-unary-operators.md)
+  * [Chapter 4: Binary Operators](chapter-08-bang-operators/chapter-04-binary-operators.md)
+  * [Chapter 5: String Operators](chapter-08-bang-operators/chapter-05-string-operators.md)
+  * [Chapter 6: List Operators](chapter-08-bang-operators/chapter-06-list-operators.md)
+  * [Chapter 7: Subst](chapter-08-bang-operators/chapter-07-subst.md)
+  * [Chapter 8: Dag Operators](chapter-08-bang-operators/chapter-08-dag-operators.md)
+  * [Chapter 9: The Paste Operator](chapter-08-bang-operators/chapter-09-the-paste-operator.md)
+* [Chapter 9: Preprocessing](tablegen-tutorial/chapter-09-preprocessing.md)
+* [Chapter 10: Conclusion](tablegen-tutorial/chapter-10-conclusion.md)
