@@ -4,18 +4,18 @@ Directed Acyclic Graphs (DAGs) are used in compiler construction a lot to repres
 
 ```mermaid
 graph TD;
-  add-->op1[mul]
-  add-->op2[mul]
-  op1-->10
-  op1-->20
-  op2-->30
-  op2-->40
-
-  classDef transparent fill:transparent,stroke:#333;
-  class add,op1,op2,10,20,30,40 transparent;
+    add-->op1[mul]
+    add-->op2[mul]
+    op1-->10
+    op1-->20
+    op2-->30
+    op2-->40
+    
+    classDef transparent fill:transparent,stroke:#333;
+    class add,op1,op2,10,20,30,40 transparent;
 ```
 
-!!!note
+!!!note 
     Again, skim over the following operators. I have rarely used them in the context of writing compiler components but I have seen them being used in some library implementations, so just get a cursory idea for now. MLIR implicitly creates ASTs for your compiler, so you won't find yourself doing any sort of DAG manipulation in TableGen as you might expect.
 
 ```tablegen
