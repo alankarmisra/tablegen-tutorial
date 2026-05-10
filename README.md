@@ -1,12 +1,12 @@
 # Index
 
-* [Chapter 1: Tablegen What Is It Good For](tablegen-tutorial/chapter-01-tablegen-what-is-it-good-for.md)
-* [Chapter 2: Prerequisites](tablegen-tutorial/chapter-02-prerequisites.md)
-* [Chapter 3: Introduction](tablegen-tutorial/chapter-03-introduction.md)
-* [Chapter 4: Terminology](tablegen-tutorial/chapter-04-terminology.md)
-* [Chapter 5: Templates](tablegen-tutorial/chapter-05-templates.md)
-* [Chapter 6: Types](tablegen-tutorial/chapter-06-types.md)
-* [Chapter 7: Multi Classes](tablegen-tutorial/chapter-07-multi-classes.md)
+* [Chapter 1: Tablegen What Is It Good For](chapter-01-tablegen-what-is-it-good-for.md)
+* [Chapter 2: Prerequisites](chapter-02-prerequisites.md)
+* [Chapter 3: Introduction](chapter-03-introduction.md)
+* [Chapter 4: Terminology](chapter-04-terminology.md)
+* [Chapter 5: Templates](chapter-05-templates.md)
+* [Chapter 6: Types](chapter-06-types.md)
+* [Chapter 7: Multi Classes](chapter-07-multi-classes.md)
 
 * Chapter 8 Bang Operators
   * [Chapter 1: Introduction](chapter-08-bang-operators/chapter-01-introduction.md)
@@ -18,5 +18,5 @@
   * [Chapter 7: Subst](chapter-08-bang-operators/chapter-07-subst.md)
   * [Chapter 8: Dag Operators](chapter-08-bang-operators/chapter-08-dag-operators.md)
   * [Chapter 9: The Paste Operator](chapter-08-bang-operators/chapter-09-the-paste-operator.md)
-* [Chapter 9: Preprocessing](tablegen-tutorial/chapter-09-preprocessing.md)
-* [Chapter 10: Conclusion](tablegen-tutorial/chapter-10-conclusion.md)
+* [Chapter 9: Preprocessing](chapter-09-preprocessing.md)
+* [Chapter 10: Conclusion](chapter-10-conclusion.md)
