@@ -9,7 +9,7 @@
 * [Multi Classes](chapter-06-multi-classes.md)
 * [Preprocessing](chapter-07-preprocessing.md)
 
-* Chapter 8 Bang Operators
+* Bang Operators
   * [Introduction](chapter-08-bang-operators/chapter-01-introduction.md)
   * [Setting Up](chapter-08-bang-operators/chapter-02-setting-up.md)
   * [Unary Operators](chapter-08-bang-operators/chapter-03-unary-operators.md)
